@@ -7,7 +7,7 @@ public class LeetCode {
     public static void main(String[] args) {
       System.out.println("Hello, World!");
       
-      Solution322_1 solution322_1 = new Solution2();
+      Solution322_1 solution322_1 = new Solution322_1();
       int[] coins = new int[]{1,2,5};
       
       int res = solution322_1.coinChange(coins, 11);
