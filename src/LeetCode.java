@@ -1,4 +1,4 @@
-// LeetCode 322 Coins Change
+// LeetCode Solutions
 
 import java.util.*;
 
@@ -7,10 +7,10 @@ public class LeetCode {
     public static void main(String[] args) {
       System.out.println("Hello, World!");
       
-      Solution2 solution2 = new Solution2();
+      Solution322_1 solution322_1 = new Solution2();
       int[] coins = new int[]{1,2,5};
       
-      int res = solution2.coinChange(coins, 11);
+      int res = solution322_1.coinChange(coins, 11);
       System.out.println("res=" + res);
       
   }
@@ -19,7 +19,7 @@ public class LeetCode {
 // LeetCode 322 Coins Change  https://leetcode.com/problems/coin-change/
 
 //recursive
-class Solution1 {
+class Solution322_1 {
       int[] memo;
   
       int coinChange(int[] coins, int amount) {
@@ -54,7 +54,7 @@ class Solution1 {
 
 //iterative
 
-class Solution2 {
+class Solution322_2 {
      int[] memo;
 
      int coinChange(int[] coins, int amount) {
