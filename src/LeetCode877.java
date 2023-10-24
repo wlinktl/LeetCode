@@ -24,7 +24,8 @@ class Solution877 {
   /* 返回游戏最后先手和后手的得分之差 */
  static int stoneGame(int[] piles) {
     int n = piles.length;
-    static Pair[][] dp = new Pair[n][n];
+    Pair[][] dp;
+    dp = new Pair[n][n];
 
       // 初始化 dp 数组
 
@@ -59,12 +60,15 @@ class Solution877 {
   }
 
 
-class Pair {
+static class Pair {
     int fir, sec;
     Pair(int fir, int sec) {
         this.fir = fir;
         this.sec = sec;
     }
+}
+  
+  
 }
 
   
